@@ -2,7 +2,7 @@
 
 ## Lessons
 ### Month 1: Frontend HTML & CSS
-Fundamentals, career, web design, website development, deployment, etc.
+Fundamentals, career, web design, website development, deployment, etc.<br>
 Link Click [Here](https://github.com/navi-0115/bearmentor-logbook-navi/tree/main/month-1)
 
 ### Month 2: Frontend JavaScript
