@@ -7,6 +7,7 @@ Link Click [Here](https://github.com/navi-0115/bearmentor-logbook-navi/tree/main
 
 ### Month 2: Frontend JavaScript
 Frontend web app development with JavaScript.
+Link Click [Here](https://github.com/navi-0115/bearmentor-logbook-navi/tree/main/month-2)
 
 ### Month 3: Frontend React
 Frontend web app development with React ecosystem.
