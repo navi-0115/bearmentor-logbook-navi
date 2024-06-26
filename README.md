@@ -6,7 +6,7 @@ Fundamentals, career, web design, website development, deployment, etc.<br>
 Link Click [Here](https://github.com/navi-0115/bearmentor-logbook-navi/tree/main/month-1)
 
 ### Month 2: Frontend JavaScript
-Frontend web app development with JavaScript.
+Frontend web app development with JavaScript.<br>
 Link Click [Here](https://github.com/navi-0115/bearmentor-logbook-navi/tree/main/month-2)
 
 ### Month 3: Frontend React
