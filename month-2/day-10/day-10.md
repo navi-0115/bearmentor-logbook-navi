@@ -10,3 +10,8 @@
     
     ## Results
     ![Results](/month-2/day-10/image.png)
+
+    ## Learn
+
+    I practice basic javascript through **[freecodecamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) ** to enhance understandings of javascript programming
+    ![freecodecamp](image-1.png)
