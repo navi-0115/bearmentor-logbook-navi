@@ -9,8 +9,7 @@
     You could check the work on [this file](https://github.com/navi-0115/bearmentor-logbook-navi/blob/main/month-2/day-10/day-10.js)
     
     ## Results
-    ![Results](/month-2/day-10/image.png = x200)
-    <img src="/month-2/day-10/image.png" alt="Screenshot of the project" width="300"/>
+    <img src="/month-2/day-10/image.png" alt="Screenshot of the project" width="600"/>
 
     ## Learn
     I practice basic javascript through **[freecodecamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) ** to enhance understandings of javascript programming
