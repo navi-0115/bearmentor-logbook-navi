@@ -1,9 +1,9 @@
-let labels = [
+const labels = [
   { id: 1, name: "Friend" },
   { id: 2, name: "Family" },
 ];
 
-let contacts = [
+const contacts = [
   {
     id: 1,
     fullName: "Alaska Bandar Salju",
@@ -11,7 +11,7 @@ let contacts = [
     phoneNumber: "62888092131232",
     address: "Jl. Bikini Bottom",
     jobTitle: "CEO",
-    labels: [labels[0]],
+    labels: ["Family", "Colleague"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ let contacts = [
     phoneNumber: "62888099912323",
     address: "Jl. Pasific Ocean",
     jobTitle: "Cleaner",
-    labels: [labels[0]],
+    labels: ["Colleague"],
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ let contacts = [
     phoneNumber: "6288809990023",
     address: "Jl. Merdeka Raya",
     jobTitle: "Software Engineer",
-    label: [labels[0]],
+    labels: ["Others"],
   },
 ];
 console.log([labels, contacts]);
@@ -118,3 +118,21 @@ function evenNumbers(arr) {
 }
 
 console.log(evenNumbers(numbers));
+
+// Task 2: Function to Log Contacts
+function renderContacts() {
+  for (let i = 0; i < contacts.length; i++) {
+    const contact = contacts[i];
+    const labelOutput = contact.labels.join("");
+
+    console.log(`
+       Fullname   :  ${contact.fullName}
+       Email      :  ${contact.email}
+       Phone      :  ${contact.phoneNumber}
+       Address    :  ${contact.address}
+       Job Title  :  ${contact.jobTitle}
+       Label      :  ${contact.labels}`);
+  }
+}
+
+renderContacts(contacts);
