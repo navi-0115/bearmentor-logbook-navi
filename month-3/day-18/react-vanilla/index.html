@@ -15,11 +15,19 @@
     <script type="text/jsx">
       const container = document.getElementById("root");
       const root = ReactDOM.createRoot(container);
+
+        function Header() {
+            return (<h1>Belajar react DOM</h1>);}
+
+        function HomePage() {
+            return (
+                <div>
+                    <Header/>
+                </div>
+            )
+        }
       root.render(
-        <>
-        <h1>Belajar react DOM</h1>
-        <p>Mari kita belajar lebih giat</p>
-        </>
+        <HomePage/>
         );
     </script>
   </body>
