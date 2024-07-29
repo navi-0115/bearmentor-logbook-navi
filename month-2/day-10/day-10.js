@@ -9,7 +9,7 @@ const contacts = [
     fullName: "Alaska Bandar Salju",
     email: "alaska@mail.com",
     phoneNumber: "62888092131232",
-    address: "Jl. Bikini Bottom",
+    address: "Sleman, DIY",
     jobTitle: "CEO",
     labels: ["Family", "Colleague"],
   },
@@ -18,7 +18,7 @@ const contacts = [
     fullName: "Blue Adams",
     email: "adams@mail.com",
     phoneNumber: "62888099912323",
-    address: "Jl. Pasific Ocean",
+    address: "Sleman, DIY",
     jobTitle: "Cleaner",
     labels: ["Colleague"],
   },
@@ -27,7 +27,7 @@ const contacts = [
     fullName: "Owen Hadi",
     email: "owenhadi@mail.com",
     phoneNumber: "6288809990023",
-    address: "Jl. Merdeka Raya",
+    address: "Surabaya, Jawa Timur",
     jobTitle: "Software Engineer",
     labels: ["Others"],
   },
@@ -120,7 +120,7 @@ function evenNumbers(arr) {
 console.log(evenNumbers(numbers));
 
 // Task 2: Function to Log Contacts
-function renderContacts() {
+function renderContacts(contacts) {
   for (let i = 0; i < contacts.length; i++) {
     const contact = contacts[i];
     const labelOutput = contact.labels.join("");
@@ -136,3 +136,37 @@ function renderContacts() {
 }
 
 renderContacts(contacts);
+
+// add new contact
+function addContact(contacts, newContact) {
+  contacts.push(newContact);
+  renderContacts(contacts);
+}
+
+let newContact = {
+  id: 4,
+  fullName: "Ahmad Cahyadi",
+  email: "ahmadc@mail.com",
+  phoneNumber: "62888092131232",
+  address: "Bantul, DIY",
+  jobTitle: "Junior DevOps",
+  labels: ["Colleague"],
+};
+
+addContact(contacts, newContact);
+
+// searching contacts
+function searchContact(contacts, keyword) {
+  let lowerKeywords = keyword.toLowerCase();
+  let results = contacts.filter(
+    (contact) =>
+      contact.fullName.toLowerCase().includes(lowerKeywords) ||
+      contact.email.toLowerCase().includes(lowerKeywords) ||
+      contact.phoneNumber.toLowerCase().includes(lowerKeywords) ||
+      contact.address.toLowerCase().includes(lowerKeywords)
+  );
+  console.log("Filtered Contacts:\n");
+  renderContacts(results);
+}
+
+searchContact(contacts, "SLEMAN");
