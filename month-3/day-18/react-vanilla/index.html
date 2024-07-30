@@ -16,13 +16,14 @@
       const container = document.getElementById("root");
       const root = ReactDOM.createRoot(container);
 
-        function Header() {
-            return (<h1>Belajar react DOM</h1>);}
+        function Header(props) {
+            return (<h1>Belajar react bersama {props.author}</h1>);}
 
         function HomePage() {
             return (
                 <div>
-                    <Header/>
+                    <Header author="Navi"/>
+                    <Header author="Kak Ben"/>
                 </div>
             )
         }
