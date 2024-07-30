@@ -20,11 +20,17 @@
             return (<h1>Belajar react bersama {author ? author : "Autodidak"}</h1>);}
 
         function HomePage() {
+            const[likes, setLikes] = React.useState(0);
+
+            function handleClick() {
+                setLikes(likes + 1);
+                console.log(likes)
+            }
+
             return (
                 <div>
-                    <Header author="Navi"/>
-                    <Header author="Kak Ben"/>
-                    <Header/>
+                    <Header />
+                    <button onClick={handleClick}>Likes {likes}</button>
                 </div>
             )
         }
